@@ -1,0 +1,10 @@
+<ul class="flex justify-end gap-4 text-sm">
+	{{ range .Site.Menus.main }}
+	<li>
+		<a class="hover:text-white text-gray-400" href="{{ .URL }}">
+			{{ $text := print .Name | safeHTML }}
+			{{ $text }}
+		</a>
+	</li>
+	{{ end }}
+</ul>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    {{ partial "seo/head.html" . }}
+    {{ partialCached "css.html" . }}
+
+</head>
+
+<body>
+
+
+    {{- partial "menus/header.html" . -}}
+
+
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+
+
+    {{- partial "menus/footer.html" . -}}
+
+
+</body>
+
+</html>

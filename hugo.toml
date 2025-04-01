@@ -1,0 +1,138 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Agencia L'
+
+
+[services]
+    [services.googleAnalytics]
+      id = ""
+
+
+[menu]
+	[[menu.main]]
+		Name = "Sobre Nós"
+		URL = "/about/"
+		weight = 10
+
+
+	[[menu.main]]
+		Name = "Suporte"
+		URL = "https://www.workana.com/freelancer/78b0396156b8038525e5aec2ad59e31f"
+		weight = 30
+
+
+[params]
+	
+
+	[params.logo]
+    header = "logo/logoL.jpg"
+    footer = "logo/logoL.jpg"
+    alt = "logo_empresa"
+
+    # The size parameter is the class name of tailwindcss
+    # https://tailwindcss.com/
+    size = "h-14"
+    size_footer = "h-24"
+
+
+	[params.social]
+
+		InstagramURL = "https://www.instagram.com/"
+		FacebookURL = "https://facebook.com/"
+		Linkedin = "https://www.linkedin.com/"
+			
+	[params.content]
+		LeadTitle = "Landing template for Startups"
+		LeadDescription = "Our landing page template works for all the devices, so you only have to setup it once, and get beautiful results forever."
+		ButtonCaption = "Pricing & Plans"
+		ButtonURL = "http://google.com"
+
+################### Feature Columns (do not exceed 4) ####################
+
+	[[params.feature]]
+		FeatureTitle = "Feature 1"
+		FeatureDescription = "A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements."
+		FeatureImage = "images/feature-1.png"
+		
+	[[params.feature]]
+		FeatureTitle = "Feature 2"
+		FeatureDescription = "A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements."
+		FeatureImage = "images/feature-2.png"
+
+	[[params.feature]]
+		FeatureTitle = "Feature 3"
+		FeatureDescription = "A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements."
+		FeatureImage = "images/feature-3.png"
+		
+	[[params.feature]]
+		FeatureTitle = "Feature 4"
+		FeatureDescription = "A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements."
+		FeatureImage = "images/feature-4.png"
+		
+	################### Pricing Columns (do not exceed 3) ####################
+
+	[[params.pricing]]
+		PricingTitle = "Starter"
+		PricingRate = "27"	
+		ButtonCaption = "Get Early Access"
+		ButtonURL = "https://example.com/early-access.html"
+		[[params.pricing.Features]]
+			Description = "Lorem ipsum is common text"
+		[[params.pricing.Features]]
+			Description = "Lorem ipsum is common text"
+		[[params.pricing.Features]]
+			Description = "Lorem ipsum is common text"
+		[[params.pricing.Features]]
+			Description = "Lorem ipsum is common text"	
+
+	[[params.pricing]]
+		PricingTitle = "Professional"
+		PricingRate = "97"
+		ButtonCaption = "Get Earlier Access"
+		ButtonURL = "https://example.com/earlier-access.html"
+		[[params.pricing.Features]]
+			Description = "Lorem ipsum is common text"
+		[[params.pricing.Features]]
+			Description = "Lorem ipsum is common text"
+		[[params.pricing.Features]]
+			Description = "Lorem ipsum is common text"
+		[[params.pricing.Features]]
+			Description = "Lorem ipsum is common text"		
+		
+	[[params.pricing]]
+		PricingTitle = "Business"
+		PricingRate = "147"
+		ButtonCaption = "Get Earliest Access"
+		ButtonURL = "https://example.com/earliest-access.html"
+		[[params.pricing.Features]]
+			Description = "Lorem ipsum is common text"
+		[[params.pricing.Features]]
+			Description = "Lorem ipsum is common text"
+		[[params.pricing.Features]]
+			Description = "Lorem ipsum is common text"
+		[[params.pricing.Features]]
+			Description = "Lorem ipsum is common text"	
+	
+
+
+
+
+########## Config tailwindcss without CDN #############
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+  [[build.cachebusters]]
+    source = '(postcss|tailwind)\.config\.js'
+    target = 'css'
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'

@@ -1,0 +1,13 @@
+<footer class="bg-gray-900 p-15">
+    <div class="grid grid-cols-1 gap-6 border-t border-gray-700">
+
+        <div> {{ partial "social.html" . }} </div>
+
+        <div>{{ partial "nav.html" . }}</div>
+    </div>
+
+    <div class="text-gray-400 text-center text-sm">&copy; {{ now.Format "2006" }},
+        todos os direitos reservados
+    </div>
+
+</footer>
