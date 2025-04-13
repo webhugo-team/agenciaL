@@ -19,6 +19,7 @@
       "html",
       "img",
       "li",
+      "link",
       "main",
       "meta",
       "p",
@@ -33,7 +34,7 @@
       "ul"
     ],
     "classes": [
-      "-mb-20",
+      "-mb-28",
       "-mt-20",
       "-top-3",
       "-translate-y-1/2",
@@ -64,8 +65,10 @@
       "focus-visible:outline-indigo-600",
       "focus-visible:outline-offset-2",
       "focus-visible:outline-white",
+      "font-bold",
       "font-medium",
       "font-semibold",
+      "font-serif",
       "from-[#ff80b5]",
       "from-cyan-600",
       "gap-4",
