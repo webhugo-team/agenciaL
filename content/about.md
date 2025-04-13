@@ -1,7 +1,6 @@
 +++
 layout = 'about'
 title = 'Empresa'
-type = 'miscellaneous'
 +++    
 
 
