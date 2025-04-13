@@ -20,6 +20,17 @@ title = 'Agencia L'
 		URL = "https://www.workana.com/freelancer/78b0396156b8038525e5aec2ad59e31f"
 		weight = 30
 
+	[[menu.main]]
+		Name = "Politicas de privacidade"
+		URL = ""
+		weight = 40
+
+
+	[[menu.main]]
+		Name = "Politicas de cookies"
+		URL = ""
+		weight = 50
+
 
 [params]
 	
