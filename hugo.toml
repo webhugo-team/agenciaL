@@ -45,6 +45,11 @@ title = 'Agencia L'
     size = "h-14"
     size_footer = "h-24"
 
+	[params.fotos]
+    pessoa1 = "logo/logoL.jpg"
+    pessoa2 = "logo/logoL.jpg"
+    alt = "fotos_equipe"
+
 
 	[params.social]
 

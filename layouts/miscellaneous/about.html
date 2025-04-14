@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<section>
+    <div class="mx-auto max-w-7xl mt-16 px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:mx-0">
+            <h2 class="text-5xl font-bold tracking-tight text-black sm:text-7xl justify-center">
+                {{ .Title }}
+            </h2>
+            <article class="mt-10 text-lg/8 justify-center font-medium text-pretty text-black">
+                <p>{{ .Content }}</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section>
+
+    {{- partial "team.html" . -}}
+
+</section>
+{{ end }}
